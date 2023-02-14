@@ -6,8 +6,7 @@
   width: 100%;
   padding: 1.75rem;
 
-  box-sizing: border-box; /* para garantir que o "width" será o tamanho absoluto, e não a soma dele com os paddings. Se não seto o border-box, esses dois componentes se somam. */
-
+  box-sizing: border-box;
   margin-bottom: 1rem;
   border: none;
   background-color: var(--branco);
@@ -27,6 +26,5 @@
 @media screen and (min-width: 1200px) {
   .input {
     width: 350px;
-    
   }
 }

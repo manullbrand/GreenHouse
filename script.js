@@ -1,4 +1,3 @@
-// Criando o nav:
 const hamburger = document.querySelector(".cabecalho__hamburger");
 const navMenu = document.querySelector(".nav__menu");
 
@@ -20,9 +19,6 @@ function abreCarrinho() {
   cestinhaProdutos.classList.toggle("active");
 }
 
-// quando clicar "produto__comprar" quero que add ao carrinho um <li> na <ul> chamada "cartao__carrinho-lista":
-
-//getElementsByClassName é um "array-like", mas ainda assim NAO É UM ARRAY. por isso não consigo usar métodos nele. Para tranformá-lo em array, basta distribuí-lo dentro dos colchetes, como fiz abaixo. Agora sim "comprar" é um array =)
 let comprar = [...document.getElementsByClassName("produto__comprar")];
 
 function addItemCarrinho(event) {
@@ -100,7 +96,6 @@ function excluiItemCarrinho() {
   let produto = [...document.getElementsByClassName("cartao__carrinho-items")];
 
   if (carrinho.children.length) {
-    //se colocar só "produto", não funciona! tem que falar qual a posição da "child" que quero remover!
     carrinho.removeChild(produto[0]);
   }
   const valorAtualizado = geraPrecoAtualizado("remove");

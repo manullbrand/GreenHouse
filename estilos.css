@@ -302,7 +302,7 @@ body {
     }
 }
 
-/* preciso, para usar grid-area, primeiro nomear essas grids, e, em seguida, aplicar a propriedade */
+
 @media screen and (min-width: 1440px) {
     .secao {
         grid-template-columns: repeat(4, 1fr);

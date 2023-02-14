@@ -1,11 +1,11 @@
 .rodape {
-  padding-top: 1.5rem;
-  padding-bottom: 2.5rem;
-
   background-color: var(--branco);
   background-image: url(../../img/splash-rodape.png);
   background-position: top -11rem right;
   background-repeat: no-repeat;
+
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .rodape__logo {
@@ -21,7 +21,7 @@
 }
 
 .rodape__social-media {
-  display: inline-block; /* para eu poder colocar ALTURA e LARGURA nesses elementos. */
+  display: inline-block;
 
   width: 1.625rem;
   height: 1.625rem;

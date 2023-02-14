@@ -18,8 +18,6 @@
     display: grid;
     grid-template-columns: 1fr 0.25fr 3fr;
     gap: 1.75rem;
-    /* grid-template-rows: 0.25fr 0.5fr 0.25fr; */
-
     max-width: 1220px;
     justify-content: center;
 
@@ -72,26 +70,19 @@
   }
 
   .opiniao__ultimo-cliente {
-    display: inline-block; /* para garantir que ele irá ficar do ladinho do botão "comprar" */
-
-    width: 0.875rem;
-    height: 0.875rem;
-
-    margin-left: 15rem;
-
     background-image: url(../../img/icones/seta-volta.svg);
+    display: inline-block;
+    height: 0.875rem;
+    margin-left: 15rem;
+    width: 0.875rem;
   }
 
   .opiniao__proximo-cliente {
-    display: inline-block; /* para garantir que ele irá ficar do ladinho do botão "comprar" */
-
-    width: 5rem;
-    height: 0.875rem;
-
-    margin-left: 1.5rem;
-
     background-image: url(../../img/seta-opiniao.png);
-
     background-repeat: no-repeat;
+    display: inline-block;
+    height: 0.875rem;
+    margin-left: 1.5rem;
+    width: 5rem;
   }
 }

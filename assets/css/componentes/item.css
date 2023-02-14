@@ -1,5 +1,5 @@
 .lista-item {
-  display: flex; /* para poder alinhar os elementos da minha lista no meio da tela, tenho que usar o display flex */
+  display: flex; 
   flex-direction: column;
   align-items: center;
 }

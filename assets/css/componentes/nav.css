@@ -45,7 +45,6 @@
     z-index: 99;
   }
 
-  /* We have also added an extra class that is .nav-menu.active which sets left: 0; on the nav-menu. Now we will have to add the javascript which will add this active class on the nav-menu when we click our hamburger. */
   .nav__menu.active {
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
     right: 0;
@@ -82,7 +81,6 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* esse comando aqui aplica somente no elemento pai que tem esse filho como característica */
   .nav__items:has(.nav__items-link-carrinho) {
     display: none;
   }

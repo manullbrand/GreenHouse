@@ -1,4 +1,3 @@
-/* Uso esse caminho para "mesclar" arquivos CSS e não precisar encher meu HTML de links de planilhas de estilo diferentes. Mais uma coisa: como boas práticas, usamos o nome desses arquivos importados com underline na frente. */
 @import url(_variaveis.css);
 @import url(_reset.css);
 

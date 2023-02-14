@@ -3,7 +3,7 @@
   cursor: pointer;
 
   text-align: center;
-  font-family: inherit; /* pois já foi setada essa funcionalidade no "base.css"*/
+  font-family: inherit;
   font-weight: var(--peso-botao);
   color: var(--branco);
 
@@ -23,17 +23,15 @@
   border: 1px solid var(--amarelo);
 }
 
-.botao__fechar-carrinho, .botao__carrinho--excluir {
+.botao__fechar-carrinho,
+.botao__carrinho--excluir {
   cursor: pointer;
   background: none;
   border: none;
 }
 
-
-
 @media screen and (min-width: 1200px) {
   .botao {
-    
     width: 194px;
     height: 75px;
     font-size: 16px;
