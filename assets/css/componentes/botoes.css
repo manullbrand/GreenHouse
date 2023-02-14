@@ -1,0 +1,41 @@
+.botao {
+  background-color: var(--amarelo);
+  cursor: pointer;
+
+  text-align: center;
+  font-family: inherit; /* pois já foi setada essa funcionalidade no "base.css"*/
+  font-weight: var(--peso-botao);
+  color: var(--branco);
+
+  width: 100%;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+
+  box-shadow: 10px 10px 30px var(--amarelo-transparente);
+
+  border: none;
+}
+
+.botao--alternativo {
+  color: var(--amarelo);
+  background-color: unset;
+  box-shadow: none;
+  border: 1px solid var(--amarelo);
+}
+
+.botao__fechar-carrinho, .botao__carrinho--excluir {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .botao {
+    
+    width: 194px;
+    height: 75px;
+    font-size: 16px;
+  }
+}

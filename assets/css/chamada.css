@@ -1,0 +1,75 @@
+.chamada {
+  background-image: url(../../assets/img/splash-chamada.svg);
+  background-position: top -4rem right;
+  background-repeat: no-repeat;
+  padding-top: 2.5rem;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.chamada__texto {
+  margin-bottom: 1.55rem;
+  width: 12.5rem;
+}
+
+.chamada__imagem {
+  position: absolute;
+  top: 3.1rem;
+  right: 0;
+}
+
+.chamada__formulario {
+  position: relative;
+  z-index: 2;
+}
+
+.desktop-break {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .chamada {
+    background-image: url(../../assets/img/splash-chamada-desktop.png);
+    background-position: 130% 110%;
+    background-repeat: no-repeat;
+    margin-left: 12rem;
+    padding-top: 8rem;
+
+    z-index: 1;
+  }
+
+  .chamada__texto {
+    font-size: 16px;
+    margin-bottom: 1.55rem;
+    width: 30rem;
+  }
+
+  .chamada__imagem {
+    background-image: url(../img/planta-chamada-desktop.png);
+    transform: scale(0.85) translate(-15%, -28%);
+   
+  }
+
+  .desktop-break {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 1199px) {
+  .chamada__texto {
+    background-color: rgba(248, 248, 248, 0.949);
+    font-size: 18px;
+    margin-bottom: 1.55rem;
+    width: 25rem;
+  }
+
+  .chamada__imagem {
+    background-image: url(../img/planta-chamada-desktop.png);
+    transform: scale(0.85) translate(3%, -30%);
+    z-index: -1;
+  }
+
+  .desktop-break {
+    display: flex;
+  }
+}

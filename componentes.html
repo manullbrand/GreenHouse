@@ -1,0 +1,156 @@
+<!-- Essa será nossa página de documentação. A documentação ajuda no desenvolvimento porque ela contém todas as instruções de como usar os componentes básicos que criamos. Ela nos auxilia a ter um lugar para consultar como são montados os componentes do nosso site. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Casa Verde</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/base/base.css" />
+    <!-- Esse daqui de cima já está importanto o documento de estilo "variaveis.css", por isso não preciso mais encher o HTML de listas de estilos diferentes -->
+    <link rel="stylesheet" href="assets/css/componentes/cabecalho.css" />
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css" />
+    <link rel="stylesheet" href="assets/css/componentes/input.css" />
+    <link rel="stylesheet" href="assets/css/componentes/cartao.css" />
+    <link rel="stylesheet" href="assets/css/componentes/item.css" />
+    <link rel="stylesheet" href="assets/css/componentes/produto.css" />
+    <link rel="stylesheet" href="assets/css/componentes/video.css" />
+    <link rel="stylesheet" href="assets/css/componentes/rodape.css" />
+  </head>
+
+  <body>
+    <header class="container cabecalho">
+      <img
+        class="cabecalho__logo"
+        src="assets/img/logo.svg"
+        alt="Logo do Casa Verde"
+      />
+      <a href="#" aria-label="Meu carrinho">
+        <img
+          class="cabecalho__carrinho"
+          src="assets/img/icones/carrinho.svg"
+          alt="Ícone dos carrinho de compra"
+        />
+      </a>
+    </header>
+
+    <main class="container">
+      <h2>Sua casa com as melhores plantas</h2>
+      <p>
+        Encontre aqui uma vasta seleção de plantas para decorar a sua casa e
+        torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e
+        assine nossa newsletter para saber das novidades da marca
+      </p>
+      <img
+        src="assets/img/planta-chamada.png"
+        alt="Planta de decoração em um cesto"
+      />
+      <img
+        src="assets/img/splash-chamada.svg"
+        alt="padrão amarelo de decoração"
+      />
+      <input
+        class="input input--icone input--email"
+        type="text"
+        placeholder="Insira seu e-mail"
+        aria-label="Insira seu e-mail"
+      />
+      <button class="botao">Assinar newsletter</button>
+
+      <article class="cartao">
+        <h2 class="titulo alinhamento--meio">
+          Como conseguir <span class="titulo--destaque">minha planta</span>
+        </h2>
+        <ul class="lista-item">
+          <li class="item">
+            <span class="item__icone item__icone--cursor"></span>
+            <p>Escolha suas plantas</p>
+          </li>
+          <li class="item">
+            <span class="item__icone item__icone--carrinho"></span>
+            <p>Faça seu pedido</p>
+          </li>
+          <li class="item">
+            <span class="item__icone item__icone--caminhao"></span>
+            <p>Aguarde na sua casa</p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="produto">
+        <img
+          src="assets/img/produto-01.png"
+          alt="foto da planta à venda"
+          class="produto__imagem"
+        />
+        <div class="produto__conteudo">
+          <h3 class="produto__titulo titulo--destaque">Ajuga reptans</h3>
+          <p class="produto__preco">R$ 20,00</p>
+          <a href="#" class="produto__comprar"
+            >Comprar <span class="produto__comprar--icone"></span
+          >
+        </a>
+        </div>
+      </article>
+
+      <article class="cartao-de-video">
+        <div class="cartao-de-video__video">
+          <!-- Essa fonte da imagem que é de um site que gera imagens randomicamente -->
+          <img src="https://picsum.photos/278/252" alt="Banner do vídeo" />
+        </div>
+        <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+        <p>Publicado em março de 2022</p>
+      </article>
+    </main>
+
+    <footer class="container rodape">
+      <img
+        class="rodape__logo"
+        src="assets/img/logo.svg"
+        alt="Logo do Casa Verde"
+      />
+      <ul class="rodape__social">
+        <li>
+          <a href="#" class="rodape__social-media" title="Facebook">
+            <img src="assets/img/icones/facebook.svg" alt="Logo do facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="rodape__social-media" title="Twitter">
+            <img src="assets/img/icones/twitter.svg" alt="Logo do Twitter" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="rodape__social-media" title="Instagram">
+            <img
+              src="assets/img/icones/instagram.svg"
+              alt="Logo do Instagram"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <address class="rodape__unidade texto">
+        <span class="rodape__unidade-titulo">Rio de Janeiro</span>
+        Rua Siqueira Campos, 171, 303<br />
+        Copacabana<br />
+        Telefone: (21) 99876-0099
+      </address>
+      <address class="rodape__unidade texto">
+        <span class="rodape__unidade-titulo">São Paulo</span>
+        Rua Anita Garibaldi, 33, 13 <br />
+        Sé<br />
+        Telefone: (11) 99875-2201
+      </address>
+    </footer>
+  </body>
+</html>

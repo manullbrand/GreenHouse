@@ -1,0 +1,97 @@
+.opiniao {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .opiniao {
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../../img/retangulo-opiniao.png);
+    background-repeat: no-repeat;
+    background-position: left -12rem top;
+
+    position: relative;
+  }
+
+  .opiniao__cartao {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 3fr;
+    gap: 1.75rem;
+    /* grid-template-rows: 0.25fr 0.5fr 0.25fr; */
+
+    max-width: 1220px;
+    justify-content: center;
+
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .opiniao__foto {
+    grid-row: 1 / span 3;
+    justify-self: center;
+  }
+
+  .opiniao__icone {
+    display: block;
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
+
+    background-image: url(../../img/icones/opiniao.svg);
+    background-color: var(--amarelo);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .opiniao__titulo {
+    grid-column: 2 / span 2;
+    align-self: flex-end;
+
+    font-size: 42px;
+    line-height: 3rem;
+  }
+
+  .opiniao__texto {
+    grid-column-start: 3;
+  }
+
+  .opiniao__cliente {
+    font-weight: var(--peso-destaque);
+
+    color: var(--preto);
+    grid-column-start: 3;
+  }
+
+  .opiniao__cliente-data {
+    font-weight: normal;
+    color: var(--cinza);
+  }
+
+  .opiniao__ultimo-cliente {
+    display: inline-block; /* para garantir que ele irá ficar do ladinho do botão "comprar" */
+
+    width: 0.875rem;
+    height: 0.875rem;
+
+    margin-left: 15rem;
+
+    background-image: url(../../img/icones/seta-volta.svg);
+  }
+
+  .opiniao__proximo-cliente {
+    display: inline-block; /* para garantir que ele irá ficar do ladinho do botão "comprar" */
+
+    width: 5rem;
+    height: 0.875rem;
+
+    margin-left: 1.5rem;
+
+    background-image: url(../../img/seta-opiniao.png);
+
+    background-repeat: no-repeat;
+  }
+}

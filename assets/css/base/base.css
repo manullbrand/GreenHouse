@@ -1,0 +1,51 @@
+/* Uso esse caminho para "mesclar" arquivos CSS e não precisar encher meu HTML de links de planilhas de estilo diferentes. Mais uma coisa: como boas práticas, usamos o nome desses arquivos importados com underline na frente. */
+@import url(_variaveis.css);
+@import url(_reset.css);
+
+body {
+  font-family: var(--familia-corpo);
+  font-size: var(--tamanho-corpo);
+  color: var(--cinza);
+
+  background: url(../../img//fundo-textura.png), url(../../img/fundo-linhas.png);
+  background-position: center;
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.titulo {
+  font-size: var(--tamanho-titulo);
+}
+
+.titulo--destaque {
+  font-family: var(--familia-titulo-destaque);
+  color: var(--preto);
+  font-size: var(--tamanho-titulo-destaque);
+  font-weight: var(--peso-titulo-destaque);
+
+  display: block;
+
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.alinhamento--esquerda {
+  text-align: left;
+}
+
+.alinhamento--meio {
+  text-align: center;
+}
+
+.texto {
+  line-height: 26px;
+}
+
+@media screen and (min-width: 1200px) {
+  .titulo--destaque-desktop {
+    font-size: 82px;
+  }
+}

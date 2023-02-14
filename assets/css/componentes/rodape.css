@@ -1,0 +1,93 @@
+.rodape {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+
+  background-color: var(--branco);
+  background-image: url(../../img/splash-rodape.png);
+  background-position: top -11rem right;
+  background-repeat: no-repeat;
+}
+
+.rodape__logo {
+  max-width: 11.125rem;
+
+  margin-bottom: 1.25rem;
+}
+
+.rodape__social {
+  display: flex;
+
+  margin-bottom: 2rem;
+}
+
+.rodape__social-media {
+  display: inline-block; /* para eu poder colocar ALTURA e LARGURA nesses elementos. */
+
+  width: 1.625rem;
+  height: 1.625rem;
+
+  margin-right: 1.625rem;
+}
+
+.rodape__unidade {
+  margin-bottom: 2rem;
+}
+
+.rodape__unidade-titulo {
+  color: var(--preto);
+  font-size: var(--tamanho-destaque);
+  font-weight: var(--peso-destaque);
+
+  display: block; /* Para separar o nome da cidade do resto da informação sobre o endereço (ou seja, pular linha sem usar o <br>. */
+
+  margin-bottom: 0.5rem;
+}
+
+.rodape__imagem {
+  display: none;
+}
+
+.rodape__contato-desktop {
+  display: inline-block;
+}
+
+@media screen and (min-width: 1200px) {
+  .rodape {
+    display: flex;
+    justify-content: center;
+
+    background-image: url(../../img/splash-rodape-desktop.svg);
+    background-position: left bottom;
+
+    padding: 0;
+    height: 320px;
+  }
+
+  .rodape__cartao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Não preciso ter todas as colunas com conteúdo. Fazendo assim, garanto que um quarto espaço em branco estará garantido. */
+    gap: 5.5rem;
+
+    margin-top: 3rem;
+
+    position: relative;
+  }
+
+  .rodape__unidade {
+    display: inline-block;
+
+    margin-bottom: 0;
+  }
+
+  .rodape__imagem {
+    display: flex;
+
+    /* Quando tenho uma posição "absolute" ela será absoluta em relação a outro elemento do site. Se eu não especificar qual, através do "position: relative", essa posição será absoluta em relação ao HTML. Por isso, especifiquei ali em cima que essa figurinha é absoluta em relação ao "rodape__cartao". A partir daí, posso definir onde quero, então, posicioná-la usando "top, bottom, roght, left". */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 320px;
+    height: auto;
+  }
+}

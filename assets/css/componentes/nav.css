@@ -1,0 +1,89 @@
+.cabecalho__hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--amarelo);
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__items {
+  margin-right: 1.5rem;
+}
+
+.nav__items-link:hover {
+  color: var(--preto);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+  .nav__menu {
+    align-items: flex-start;
+    background-color: var(--branco-transparente);
+    border-left: 5px solid var(--amarelo);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100vh - 5rem);
+    right: -100%;
+    position: fixed;
+    text-align: flex;
+    top: 5rem;
+    transition: 0.3s;
+    width: 50%;
+    z-index: 99;
+  }
+
+  /* We have also added an extra class that is .nav-menu.active which sets left: 0; on the nav-menu. Now we will have to add the javascript which will add this active class on the nav-menu when we click our hamburger. */
+  .nav__menu.active {
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    right: 0;
+  }
+
+  .nav__items {
+    border-bottom: 1px solid var(--cinza);
+    font-size: larger;
+    display: block;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .cabecalho__hamburger {
+    cursor: pointer;
+    display: block;
+    margin-left: 12rem;
+  }
+
+  .cabecalho__hamburger.active.container.chamada {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .cabecalho__hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .cabecalho__hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .cabecalho__hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* esse comando aqui aplica somente no elemento pai que tem esse filho como característica */
+  .nav__items:has(.nav__items-link-carrinho) {
+    display: none;
+  }
+}

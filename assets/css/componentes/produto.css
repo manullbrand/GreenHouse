@@ -1,0 +1,81 @@
+.produto {
+  background-color: var(--branco);
+
+  box-shadow: 10px 10px 30px var(--preto-transparente);
+
+  box-sizing: border-box; /* TODA vez que mexer com o padding, é bom deixar essa configuração aqui, para evitar de quebrar tudo. */
+  margin-bottom: 1rem;
+  min-height: 12.5rem;
+  overflow: hidden; /*para não deixar a imagem que está "flutuando" vazar do meu cartão */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 50%;
+
+  position: relative; /* para a imagem do produto "flutuar" dentro do cartão */
+}
+
+.produto__imagem {
+  position: absolute;
+  top: 50%;
+  left: -8rem;
+
+  transform: translateY(
+    -50%
+  ); /*para a metade da imagem ficar na metade do cartão */
+  z-index: 1; /* para garantir que a imagem ficará atrás do conteúdo e não irá sobrepor o escrito */
+
+  width: 18.75rem;
+}
+
+.produto__conteudo {
+  position: relative;
+  z-index: 2; /* para garantir que o conteúdo irá ficar NA FRENTE da imagem */
+}
+
+.produto__titulo {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.produto__preco {
+  margin-bottom: 1.5rem;
+}
+
+.produto__comprar {
+  color: var(--amarelo);
+
+  display: flex; /* para poder alinhar o icone de seta que virá junto desse botão comprar */
+  align-items: center;
+}
+
+.produto__comprar--icone {
+  display: inline-block; /* para garantir que ele irá ficar do ladinho do botão "comprar" */
+
+  width: 0.875rem;
+  height: 0.875rem;
+
+  margin-left: 1.75rem;
+
+  background-image: url(../../img/icones/seta.svg);
+  background-size: contain; /* para a imagem não ultrapassar o tamanho definido por nós ali em width e height */
+}
+
+@media screen and (min-width: 1200px) {
+  .produto__desktop {
+    display: grid;
+
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 200px 200px;
+
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .produto {
+    margin-bottom: 0;
+  }
+
+  .produto__imagem {
+    transform: scale(0.85) translate(25%, -50%);
+  }
+}

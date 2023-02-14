@@ -1,0 +1,22 @@
+.como-conseguir {
+  margin-bottom: 5.625rem;
+}
+
+.como-conseguir-planta {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .como-conseguir {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+ 
+  .como-conseguir-planta {
+    display: flex;
+  }
+
+  .alinhamento--esquerda {
+    text-align: left;
+  }
+}

@@ -1,0 +1,25 @@
+.carrinho__levels {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.carrinho__imagem-produto {
+  display: inline-block;
+  box-shadow: 5px 5px 10px var(--preto-transparente);
+  width: 70px;
+  height: 70px;
+}
+
+.carrinho__texto-destaque {
+  color: var(--preto);
+  font-weight: var(--peso-destaque);
+}
+
+.carrinho__quantity {
+  border: none;
+  color: var(--cinza);
+  font-family: var(--familia-corpo);
+}
